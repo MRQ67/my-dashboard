@@ -25,8 +25,8 @@ To get started with the project, follow these steps:
     ```go
 	url := fmt.Sprintf("http://api.openweathermap.org/data/2.5/weather?q=%s&appid="+"your-api-key-here", encodedCity)
     ```
-    
-    _Note: I should have use environment variables for the API key but i couldn't get it to work!_
+
+    _Note: I should have used environment variables for the API key but i couldn't get it to work!_
 
 
 ## Running the Application
@@ -37,6 +37,10 @@ go run main.go
 ```
 
 The dashboard will be accessible at `http://localhost:8080` in your web browser.
+
+## Example of the Interface
+
+![images/web_example.png]
 
 ## Features
 
