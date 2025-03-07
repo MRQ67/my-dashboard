@@ -40,7 +40,7 @@ The dashboard will be accessible at `http://localhost:8080` in your web browser.
 
 ## Example of the Interface
 
-![images/web_example.png]
+![](images/web_example.png)
 
 ## Features
 
