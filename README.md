@@ -18,12 +18,14 @@ To get started with the project, follow these steps:
    go mod tidy
    ```
 
-3. **Set up environment variables**:
+3. **Set up Your API KEY**:
    - You need to obtain your own API key from [OpenWeatherMap](https://openweathermap.org/api) for the weather functionality to work.
-   - Set the API key in your environment by running:
-     ```bash
-     export OPENWEATHER_API_KEY=your-api-key
+   - Added your API KEY to tools/weather.go on 32 in place of "your-api-key-here"
+     ```go
+	url := fmt.Sprintf("http://api.openweathermap.org/data/2.5/weather?q=%s&appid="+"your-api-key-here", encodedCity)
      ```
+    _Note: I should have use environment variables for the API key but i couldn't get it to work!_
+
 
 ## Running the Application
 
@@ -51,5 +53,5 @@ The CSS in this project is intentionally simple and minimal. I focused on functi
 ## Notes
 
 - A stable internet connection is required for the API calls to function properly.
-- The weather feature will not work unless you correctly set your own OpenWeatherMap API key in the environment variables.
+- The weather feature will not work unless you correctly set your own OpenWeatherMap API key in the program.
 - This project serves as a proof-of-concept for integrating CLI tools into a web interface and may need additional enhancements for production use.
