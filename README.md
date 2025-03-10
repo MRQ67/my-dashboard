@@ -20,7 +20,7 @@ To get started with the project, follow these steps:
 
 3. **Set up Your API KEY**:
    - You need to obtain your own API key from [OpenWeatherMap](https://openweathermap.org/api) for the weather functionality to work.
-   - Added your API KEY to tools/weather.go on 32 in place of "your-api-key-here"
+   - Added your API KEY to tools/weather.go on line 32 in place of "your-api-key-here"
 
     ```go
 	url := fmt.Sprintf("http://api.openweathermap.org/data/2.5/weather?q=%s&appid="+"your-api-key-here", encodedCity)
